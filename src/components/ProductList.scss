@@ -1,0 +1,166 @@
+.ProductList {
+  .boxSearch {
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .boxFilter {
+      width: 80%;
+      background-color: #93c4e5;
+      padding: 4rem;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1rem;
+      .addData {
+        border: none;
+        padding: 1rem;
+        color: white;
+        background-color: blue;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
+      }
+      .formInputFilter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+        .formSearch {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .inputSearch {
+            padding: 1rem;
+            width: 15rem;
+            border: none;
+            outline: none;
+          }
+          .buttonIconSearch {
+            padding: 1rem;
+            border: none;
+            border-top-left-radius: 0.4rem;
+            border-bottom-left-radius: 0.4rem;
+            background-color: blue;
+            color: white;
+            cursor: none;
+          }
+          .buttonSearch{
+            padding: 1rem;
+            border: none;
+            border-top-right-radius: 0.4rem;
+            border-bottom-right-radius: 0.4rem;
+            background-color: white;
+            color: black;
+          }
+        }
+        .formFilter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .inputFilter {
+              padding: 1rem;
+              width: 17rem;
+              border: none;
+              border-top-right-radius: 0.4rem;
+              border-bottom-right-radius: 0.4rem;
+              border-right: 16px solid transparent;
+              outline: none;
+              background-color: white;
+            }
+            button {
+              padding: 1rem;
+              cursor: none;
+              border: none;
+              border-top-left-radius: 0.4rem;
+              border-bottom-left-radius: 0.4rem;
+              background-color: blue;
+              color: white;
+            }
+          }
+      }
+    }
+  }
+  .listProduct {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 29rem);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem 1rem;
+
+    .viewCard {
+      height: 33rem;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      .image {
+        width: 100%;
+        height: 20rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+      .titleProduct{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(39, 37, 37);
+      }
+      .descrip {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        .price {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          .price_selling {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.2rem;
+            color: rgb(132, 127, 127);
+            font-size: 1.2rem;
+          }
+        }
+        .stock {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.3rem;
+          color: black;
+        }
+      }
+      .buttonAction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 0rem;
+        .update {
+          border: none;
+          color: white;
+          background-color: blue;
+          padding: 1rem;
+          border-radius: 0.8rem;
+        }
+        .delete {
+          border: none;
+          color: white;
+          background-color: red;
+          padding: 1rem;
+          border-radius: 0.8rem;
+        }
+      }
+    }
+  }
+}

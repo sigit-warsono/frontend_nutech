@@ -1,0 +1,150 @@
+.modalSigit {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  //   background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  .popSigit {
+    width: 50rem;
+    height: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    z-index: 3;
+    padding: 0.2rem;
+    padding-bottom: 0rem;
+    .topHead {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      padding-right: 1rem;
+      span {
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+      .update{
+        padding-top: 1.5rem;
+        padding-left: 1.4rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+    .sectionBody {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem;
+      padding-bottom: 0rem;
+      .flexForm {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        .formInput {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 0.4rem;
+
+          .form {
+            padding: 0.7rem;
+            outline: none;
+            border-radius: 0.2rem;
+            border: 1px solid rgb(129, 124, 124);
+            width: 100%;
+          }
+        }
+      }
+      .formFile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        .formUploadFile {
+          width: 10rem;
+          opacity: 0;
+        }
+        .flexFile {
+          display: flex;
+          margin-left: -12rem;
+          gap: 5px;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        .imageiconUplaod {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+
+      .flexButtonAction {
+        display: flex;
+        justify-content: flex-end;
+        padding: 2rem;
+        width: 100%;
+        button {
+          color: white;
+          background-color: blue;
+          padding: 0.5rem;
+          border-radius: 0.4rem;
+          border: none;
+          width: 9rem;
+        }
+      }
+    }
+  }
+  .popSigitDelete {
+    width: 30rem;
+    height: 10rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    padding: 0.2rem;
+    padding-bottom: 0rem;
+    gap: 1rem;
+    .flexButtonDelete{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        .yesDelete{
+            padding: 0.3rem;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 0.3rem;
+            width: 4rem;
+        }
+
+        .noDelete{
+            padding: 0.3rem;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 0.3rem;
+            width: 4rem;
+        }
+    }
+  }
+}

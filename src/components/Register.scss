@@ -1,0 +1,84 @@
+.Register-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #0099ff;
+    .Auth-form{
+        width: 30%;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        padding: 1rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 2rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        gap: 2rem;
+        z-index: 2;
+        h1{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .sectionForm{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            input{
+                width: 100%;
+                border-radius: 10px;
+                border: 1px solid rgb(216, 211, 211);
+                padding: 1rem;
+            }
+        }
+        .submitButton{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 0.4rem;
+            .login{
+                padding: 1rem;
+                width: 100%;
+                background-color: blue;
+                border: none;
+                border-radius: 1rem;
+                color: white;
+            }
+
+            .register{
+                padding: 1rem;
+                width: 100%;
+                background-color: green;
+                border: none;
+                border-radius: 1rem;
+                color: white;
+            }
+            .flexOR{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                gap: 0.7rem;
+                .line{
+                    border-top: 2px solid black;
+                    width: 100%;
+                    margin-top: 0.8rem;
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+.StyleBackground{
+    margin-top: -20rem;
+}

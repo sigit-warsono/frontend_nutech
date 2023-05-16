@@ -20,6 +20,9 @@ import { BiAddToQueue, BiSearch } from "react-icons/bi";
 import ModalAdd from "./Modal/ModalAdd";
 import ModalDelete from "./Modal/ModalDelete";
 import ModalUpdate from "./Modal/ModalUpdate";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);

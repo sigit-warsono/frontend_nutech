@@ -80,6 +80,8 @@ const ModalUpdate = (props) => {
       
     } catch (error) {
       console.log(error);
+        setInvalidImage(error.response.data.msg);
+        setUniqueName(error.message);
     }
    
   };
